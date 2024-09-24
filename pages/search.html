@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>about</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+  
+  <main class="container px-0 py-lg-2">
+    <section>
+      <div class="mb-4 rounded-3 position-relative">
+        <picture>
+          <source media="(min-width: 992px)" srcset="../assets/images/1T53whgd.jpeg" />
+          <img src="../assets/images/1T53whgd.jpeg" alt="" class="mw-100" />
+        </picture>
+        <div class="banner-title text-lg-end text-end w-100 
+                    position-absolute top-50 end-50 translate-middle-y">
+          <h1 class="mb-lg-3 mb-1">中秋賞月</h1>
+          <h3>2人同行1人免費</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex py-1">
+      <span class="material-symbols-outlined ">
+        house</span>
+        <h2 class="fs-5">>商品搜尋</h2>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-4">
+                <h5>分類</h5>
+                <!--選擇國家-->
+                <div class="dropdown border border-1 rounded-0 px-1">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    選擇國家
+                  </button>
+                  <ul class="dropdown-menu text-black-50" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">中南半島</a></li>
+                    <li><a class="dropdown-item" href="#">  越南</a></li>
+                    <li><a class="dropdown-item" href="#">  寮國</a></li>
+                    <li><a class="dropdown-item" href="#">  柬埔寨</a></li>
+                    <li><a class="dropdown-item" href="#">  泰國</a></li>
+                    <li><a class="dropdown-item" href="#">  緬甸</a></li>
+                    <li><a class="dropdown-item" href="#">  馬來西亞(馬來半島)</a></li>
+                    <li><a class="dropdown-item" href="#">南洋群島</a></li>
+                  </ul>
+                </div>
+                <!--選擇國家end-->
+      
+                <!--選擇景點-->
+                <div class="dropdown px-3">
+                  <button class="btn dropdown-toggle mb-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    選擇景點
+                  </button>
+                  <ul class="dropdown-menu text-black-50" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">北越下龍灣海上villa</a></li>
+                    <li><a class="dropdown-item" href="#">北越(雙龍灣)</a></li>
+                    <li><a class="dropdown-item" href="#">中越(蜆港、順化、會安)</a></li>
+                    <li><a class="dropdown-item" href="#">北越(河內、沙壩)</a></li>
+                    <li><a class="dropdown-item" href="#">南越(胡志明、美奈)</a></li>
+                    <li><a class="dropdown-item" href="#">南越(富國島)</a></li>
+                  </ul>
+                </div>
+                <!--選擇景點end-->
+      
+                <!--篩選條件-->
+                <div>
+                  <h5>篩選條件</h5>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      好評5以上
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      海灘
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      高山
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      美食之旅
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      文化探險
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      景點地標
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      半日遊
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      一日遊
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      巴士旅遊
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      步行旅遊
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      早餐
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      午餐
+                    </label>
+                  </div>  
+                    <div class="form-check ms-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        晚餐
+                      </label>
+                    </div>
+                  
+                </div>
+                <!--篩選條件end-->
+            </div>
+            <div class="col-8">
+                <!--右邊版面-->
+                <div class="d-flex flex-wrap g-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <!--右邊版面end-->
+            </div>
+        
+          </div>
+    </section>
+    
+
+
+
+    </main>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
